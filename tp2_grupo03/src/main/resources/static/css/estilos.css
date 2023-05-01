@@ -4,3 +4,23 @@
 	margin: 0px;
 	padding:0px;
 }
+
+body {
+    background-color: lightblue;
+}
+
+h1:hover {
+    text-decoration: underline;
+}
+
+p:first-child {
+    font-weight: bold;
+}
+
+a:visited {
+    color: purple;
+}
+
+input:focus {
+    border: 1px solid green;
+}
