@@ -8,7 +8,7 @@
 		<header th:replace="/layouts/header::header"></header>
 	
 		<section>        
-        	<form th:action="@/producto/guardar" th:object="newProduct" method="post">
+        	<form th:action="@{/producto/guardar}" th:object="${newProduct}" method="post">
 				<h2>Crear nuevo producto</h2>
             	<div>
                		<label>Nombre </label>
