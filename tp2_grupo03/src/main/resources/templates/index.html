@@ -7,22 +7,8 @@
 	</head>
 	
 	<body>
-		<header>
-			<h1>Gracias por visitarnos</h1>
-			<img width="250px" alt="Bienvenido" src="../static/images/bienvenido.jpg" />
-		</header>		
-		<hr/>
-		<nav>
-			<h2>Inicio</h2>
-			<ul>
-				<li><a href="index.html">Inicio</li>
-				<li><a href="productos.html">Productos</li>
-				<li><a href="consejosdesalud.html">Consejos de Salud</a></li>
-				<li><a href="serviciodepaseo.html">Servicio de Paseos</a></li>
-				<li><a href="sucursales.html">Sucursales</a></li>
-				<li><a href="contacto.html">Contáctanos</a></li>
-			</ul>
-		</nav>
+		<header th:replace="/layouts/header::header"></header>
+	
 		
 		<section>
 			<article>
@@ -38,12 +24,6 @@
 				 	</aside>
 			</article>
 		</section>
-		<footer align="center">
-			<br/>
-			<hr/>
-			<p>MisMascotas.com</p>
-			<p>Diseñado por Grupo 3 - Jujuy - Republica Argentina</p>
-			<p>Copyright 2023 © Todos los derechos reservados</p>		</center>	
-		</footer> 		
+		<footer th:replace="/layouts/footer::footer"></footer>
 	</body>
 </html>

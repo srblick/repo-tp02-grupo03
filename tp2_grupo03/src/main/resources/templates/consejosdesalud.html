@@ -7,21 +7,7 @@
 	</head>
 	
 	<body>
-		<header>
-			<h1>Consejos de Salud</h1>
-		</header>
-		<hr/>
-		<nav>
-			<h2>MisMacotas.com</h2>
-			<ul>
-				<li><a href="index.html">Inicio</li>
-				<li><a href="productos.html">Productos</li>
-				<li><a href="consejosdesalud.html">Consejos de Salud</a></li>
-				<li><a href="serviciodepaseo.html">Servicio de Paseos</a></li>
-				<li><a href="sucursales.html">Sucursales</a></li>
-				<li><a href="contacto.html">Contáctanos</a></li>
-			</ul>
-		</nav>
+		<header th:replace="/layouts/header::header"></header>
 		
 		<section>
 			<article>
@@ -59,15 +45,7 @@
 				 
 			</article>
 		</section>
-		<footer align="center">
-			<br/>
-			<hr/>
-			<center>
-			<p>MisMascotas.com</p>
-			<p>Diseñado por Grupo 3 - Jujuy - Republica Argentina</p>
-			<p>Copyright 2023 © Todos los derechos reservados</p>
-			</center>
-		</footer>		
+		<footer th:replace="/layouts/footer::footer"></footer>
 	
 	</body>
 </html>
