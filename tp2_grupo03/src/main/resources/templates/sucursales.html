@@ -8,18 +8,7 @@
 	
 	<body>
 		<h1>Sucursales</h1>
-		<hr/>
-		<nav>
-			<h2>MisMascotas.com</h2>
-			<ul>
-				<li><a href="index.html">Inicio</li>
-				<li><a href="productos.html">Productos</li>
-				<li><a href="consejosdesalud.html">Consejos de Salud</a></li>
-				<li><a href="serviciodepaseo.html">Servicio de Paseos</a></li>
-				<li><a href="sucursales.html">Sucursales</a></li>
-				<li><a href="contacto.html">Contáctanos</a></li>
-			</ul>
-		</nav>
+		<header th:replace="/layouts/header::header"></header>
 		<section>
 			<h3>Distintas sucursales en Jujuy</h3>
 			<ul>
@@ -31,12 +20,6 @@
 			<hr/>
 			<p>Cualquier consulta ingrese a la pagina de contacto o llame al 388-4923314</p>
 	    </section>
-		<footer align="center">
-			<br/>
-			<hr/>
-			<p>MisMascotas.com</p>
-			<p>Diseñado por Grupo 3 - Jujuy - Republica Argentina</p>
-			<p>Copyright 2023 © Todos los derechos reservados</p>					
-		</footer>		
+		<footer th:replace="/layouts/footer::footer"></footer>
 	</body>
 </html>
