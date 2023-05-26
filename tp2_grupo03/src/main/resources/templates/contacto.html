@@ -10,6 +10,8 @@
 	
 		<section>   
 				<article class="contacto">
+					<button class="button button-green"><a th:href="@{/contacto/administrar}")>Administrar Contactos</a></button>
+					<p class="mensaje-sistema"  th:if="${mensaje != null}" th:text="${mensaje}"></p>
 				    <h2>Contactenos</h2>
 				    <p>
 				        3915 Av. General Belgrano, 388-4999999
@@ -23,23 +25,23 @@
 				        <li><a href="www.twitter.com">Twitter</a></li>
 				    </ul>
 				</article>           		
-				<form class="formulario" id="formulario_enviar" name="formulario">
+				<form class="formulario" th:action="@{/contacto/guardar}" th:object="${newContacto}" method="post">
 				    <hr>
 				    <div class="form-group">
 				        <label>Nombre</label>
-				        <input type="text" id="nombre" name="nombre" value="" placeholder="Ingrese su nombre" />
+				        <input type="text" th:field="*{nombre}" placeholder="Ingrese su nombre" />
 				    </div>
 				    <div class="form-group">
 				        <label>Email</label>
-				        <input type="email" id="correo" name="correo" value="" placeholder="Ingrese un mail válido" />
+				        <input type="email" th:field="*{email}" placeholder="Ingrese un mail válido" />
 				    </div>
 				    <div class="form-group">
 				        <label>Ciudad</label>
-				        <input type="text" id="ciudad" name="ciudad" value="" placeholder="Ingrese su ciudad" />
+				        <input type="text" th:field="*{ciudad}" placeholder="Ingrese su ciudad" />
 				    </div>
 				    <div class="form-group">
 				        <label>Mensaje</label>
-				        <textarea id="consulta" name="consulta" cols="50" rows="5"></textarea>
+				        <textarea th:field="*{mensaje}" cols="50" rows="5"></textarea>
 				    </div>
 				    <div class="form-group">
 				        <input type="submit" value="Enviar">

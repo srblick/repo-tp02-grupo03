@@ -1,24 +1,24 @@
 package ar.edu.unju.fi.model;
 
-public class Mensaje {
+public class Contacto {
 	private String nombre;
 	private String email;
 	private String ciudad;
-	private String consulta;
+	private String mensaje;
 	
 	
-	public Mensaje() {
+	public Contacto() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
 
-	public Mensaje(String nombre, String email, String ciudad, String consulta) {
+	public Contacto(String nombre, String email, String ciudad, String mensaje) {
 		super();
 		this.nombre = nombre;
 		this.email = email;
 		this.ciudad = ciudad;
-		this.consulta = consulta;
+		this.mensaje = mensaje;
 	}
 
 
@@ -52,14 +52,14 @@ public class Mensaje {
 	}
 
 
-	public String getConsulta() {
-		return consulta;
+	public String getMensaje() {
+		return mensaje;
 	}
 
 
-	public void setConsulta(String consulta) {
-		this.consulta = consulta;
+	public void setMensaje(String mensaje) {
+		this.mensaje = mensaje;
 	}
-
 	
+
 }

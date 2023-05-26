@@ -273,3 +273,33 @@ footer p {
   align-items: center;
   height: 100vh;
 }
+.mensaje-sistema{
+  background-color: lightgreen;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.card {
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.nombre {
+  background-color: lightblue;
+  font-weight: bold;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+.email, .ciudad {
+  color: #888;
+  margin-bottom: 5px;
+}
+
+.mensaje {
+  font-style: italic;
+  margin-bottom: 5px;
+}
