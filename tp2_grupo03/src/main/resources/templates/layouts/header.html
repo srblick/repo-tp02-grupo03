@@ -5,12 +5,13 @@
 <title></title>
 </head>
 <body>
-	<header th:fragment="header">
-		<nav>
-			<div>
-				<img width="250px" alt="MisMascotas.com" src="../static/images/mismascotas.jpg" />
+	<header th:fragment="header" class="container-bg">
+		<div class="menu">
+			<div class="logo">
+				<img width="250px" alt="MisMascotas.com" src="images/logo.png" />
 				<h2>Mis Mascotas</h2>
 			</div>
+		<nav class="navmenu">
 			<ul>
 				<li><a th:href="@{/}">Inicio</li>
 				<li><a th:href="@{/productos}">Productos</li>
@@ -20,6 +21,7 @@
 				<li><a th:href="@{/contacto}">Contáctanos</a></li>
 			</ul>
 		</nav>
+		</div>
 	</header>
 </body>
 </html>
