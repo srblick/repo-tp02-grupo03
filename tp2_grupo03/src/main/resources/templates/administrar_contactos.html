@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org" lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>Administrar Contactos</title>
+		<link rel="stylesheet" type="text/css" href="../css/estilos.css">
+	</head>
+	<body>
+		<header th:replace="/layouts/header::header"></header>
+	
+		<section>   
+				<article class="contacto">
+					<h2>Mensajes de Contactos</h2>
+					<div class="card" th:each="contacto: ${contactos}">
+						<p class="nombre" >Nombre: <span th:text="${contacto.nombre}"></span></p>
+						<p class="email">Email: <span th:text="${contacto.email}"></span></p>
+						<p class="ciudad">Ciudad: <span th:text="${contacto.ciudad}"></span></p>
+						<p class="mensaje">Mensaje: <span th:text="${contacto.mensaje}"></span></p>
+					</div>
+				</article>           		
+			</section>
+		<footer th:replace="/layouts/footer::footer"></footer>
+	</body>
+</html>

@@ -1,26 +1,305 @@
-@charset "ISO-8859-1";
+/* estilos.css */
 
-*{
-	margin: 0px;
-	padding:0px;
-}
-
+/* Estilos generales */
+/* Estilos generales */
 body {
-    background-color: lightblue;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-h1:hover {
-    text-decoration: underline;
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.container-bg {
+    background-image: url("../images/fondoapp.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+}
+/* Estilos del menú */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
 }
 
-p:first-child {
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+
+.navmenu ul {
+    background-color: #333;
+    list-style-type: none;
+    margin: 0px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.navmenu ul li {
+    margin-left: 10px;
+}
+
+.navmenu ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+}
+/* Estilos de la sección de contenido */
+.section {
+    background-image: url("images/fondoapp.jpg");
+    background-size: cover;
+    padding: 50px;
+    color: #fff;
+    text-align: center;
+}
+
+.section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+
+/* Estilos de encabezado */
+header {
+    background-color: #f8f8f8;
+    padding: 20px;
+}
+
+header h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Estilos de secciones */
+section {
+    padding: 20px;
+}
+
+section h2 {
+    font-size: 20px;
+}
+
+/* Estilos de pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Estilos específicos */
+#quienes-somos {
+    background-color: #f8f8f8;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+#quienes-somos p {
+    margin-bottom: 10px;
+}
+
+/* Estilos de botones */
+.button {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.button-red {
+    background-color: #b40e0e;
+    color: #fff;
+}
+
+.button-blue {
+    background-color: #040e97;
+    color: #fff;
+}
+
+.button-green {
+    background-color: #196a00;
+    color: white;
+}
+
+.button-green::before {
+    content: "+";
+    margin-right: 4px;
+}
+.button a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.productos-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.productos-table th,
+.productos-table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.productos-table th {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+.productos-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.productos-table tr:hover {
+    background-color: #ddd;
+}
+
+.formulario {
+    width: 420px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+.formulario h2 {
+    margin-top: 0;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    display: block;
     font-weight: bold;
 }
 
-a:visited {
-    color: purple;
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
-input:focus {
-    border: 1px solid green;
+.form-group input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+.form-group input[type="submit"]:hover {
+    background-color: #45a049;
+}
+.contacto {
+    margin: 20px 0;
+  	text-align: center;
+}
+
+.contacto h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contacto p {
+    margin-bottom: 10px;
+}
+
+.contacto a {
+    color: #3366cc;
+    text-decoration: none;
+}
+
+.redes-sociales {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.redes-sociales li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.redes-sociales li:last-child {
+    margin-right: 0;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.mensaje-sistema{
+  background-color: lightgreen;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.card {
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.nombre {
+  background-color: lightblue;
+  font-weight: bold;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+.email, .ciudad {
+  color: #888;
+  margin-bottom: 5px;
+}
+
+.mensaje {
+  font-style: italic;
+  margin-bottom: 5px;
 }
